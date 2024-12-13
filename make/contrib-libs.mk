@@ -1354,7 +1354,7 @@ EXPAT_SOURCE = expat-$(EXPAT_VER).tar.bz2
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://easyrpg.org/downloads/sources/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://github.com/turulbird/SOURCES/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
