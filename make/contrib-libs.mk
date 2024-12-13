@@ -1349,12 +1349,12 @@ $(D)/libiconv: $(D)/bootstrap $(ARCHIVE)/$(LIBICONV_SOURCE)
 #
 # expat
 #
-EXPAT_VER = 2.6.4
-EXPAT_SOURCE = expat-$(EXPAT_VER).tar.bz2
+EXPAT_VER = 2.5.0
+EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://sourceforge.net/projects/expat/files/expat/2.6.4/expat-2.6.4.tar.bz2/download/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://mirror-hk.koddos.net/lfs/lfs-packages/12.0/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
