@@ -1350,11 +1350,11 @@ $(D)/libiconv: $(D)/bootstrap $(ARCHIVE)/$(LIBICONV_SOURCE)
 # expat
 #
 EXPAT_VER = 2.5.0
-EXPAT_SOURCE = expat-$(EXPAT_VER).tar.bz2
+EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://github.com/turulbird/SOURCES/blob/main/expat-2.5.0.tar.bz2
+	$(WGET) https://github.com/turulbird/SOURCES/blob/main/expat-2.5.0.tar.xz
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
