@@ -1350,11 +1350,11 @@ $(D)/libiconv: $(D)/bootstrap $(ARCHIVE)/$(LIBICONV_SOURCE)
 # expat
 #
 EXPAT_VER = 2.5.0
-EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
+EXPAT_SOURCE = expat-$(EXPAT_VER).tar.bz2
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://mega.nz/file/n5MCxAJa#-36FaovtRrIjZa0NScATNlQdlCHMKIpoHFM16065C0o/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://easyrpg.org/downloads/sources/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
