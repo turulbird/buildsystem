@@ -1354,7 +1354,7 @@ EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://www.dropbox.com/scl/fi/ud5zlf20yphnq9zon6zum/expat-2.5.0.tar.xz?rlkey=jk1cswe9yqmy2nxqve5znbloi&st=g9sstx1e&dl=0/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://www.dropbox.com/scl/fo/dtfa8n0181ktgoo35nqox/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
