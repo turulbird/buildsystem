@@ -615,11 +615,11 @@ $(D)/boost: $(D)/bootstrap $(ARCHIVE)/$(BOOST_SOURCE)
 # zlib
 #
 ZLIB_VER = 1.3
-ZLIB_SOURCE = zlib-$(ZLIB_VER).tar.xz
+ZLIB_SOURCE = zlib-$(ZLIB_VER).tar.gz
 ZLIB_Patch = zlib-$(ZLIB_VER).patch
 
 $(ARCHIVE)/$(ZLIB_SOURCE):
-	$(WGET) https://zlib.net/$(ZLIB_SOURCE)
+	$(WGET)https://www.zlib.net/fossils/$(ZLIB_SOURCE)
 
 $(D)/zlib: $(D)/bootstrap $(ARCHIVE)/$(ZLIB_SOURCE)
 	$(START_BUILD)
