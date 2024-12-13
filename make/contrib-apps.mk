@@ -14,7 +14,7 @@ BUSYBOX_PATCH += busybox-$(BUSYBOX_VER)-recursive_action-fix.patch
 BUSYBOX_PATCH += busybox-$(BUSYBOX_VER)-sh4-revert_ifa_flags.patch
 
 $(ARCHIVE)/$(BUSYBOX_SOURCE):
-	$(WGET) https://busybox.net/downloads/$(BUSYBOX_SOURCE)
+	$(WGET) http://ftp.icm.edu.pl/packages/busybox/$(BUSYBOX_SOURCE)
 
 ifeq ($(BOXTYPE), $(filter $(BOXTYPE), adb_box hs7119 hs7429 hs7819 spark spark7162 ufs912 ufs913 vitamin_hd5000))
 BUSYBOX_CONFIG = busybox-$(BUSYBOX_VER).config_nandwrite
