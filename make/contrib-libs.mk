@@ -1354,7 +1354,7 @@ EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://mega.nz/folder/fsF0ULiL#imxYEtBqSLMzX7fuVZtPkw/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://mega.nz/file/n5MCxAJa#-36FaovtRrIjZa0NScATNlQdlCHMKIpoHFM16065C0o/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
