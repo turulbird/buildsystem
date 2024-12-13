@@ -1350,7 +1350,7 @@ $(D)/libiconv: $(D)/bootstrap $(ARCHIVE)/$(LIBICONV_SOURCE)
 # expat
 #
 EXPAT_VER = 2.6.4
-EXPAT_SOURCE = expat-$(EXPAT_VER)tar.xz
+EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
