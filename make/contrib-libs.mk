@@ -1354,7 +1354,7 @@ EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) http://tinycorelinux.net/14.x/x86_64/release/src/toolchain/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://github.com/libexpat/libexpat/releases/tag/R_2_5_0/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
