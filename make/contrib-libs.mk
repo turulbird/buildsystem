@@ -1349,12 +1349,12 @@ $(D)/libiconv: $(D)/bootstrap $(ARCHIVE)/$(LIBICONV_SOURCE)
 #
 # expat
 #
-EXPAT_VER = 2.5.0
+EXPAT_VER = 2.6.4
 EXPAT_SOURCE = expat-$(EXPAT_VER).tar.xz
 EXPAT_PATCH  = expat-$(EXPAT_VER)-libtool-tag.patch
 
 $(ARCHIVE)/$(EXPAT_SOURCE):
-	$(WGET) https://github.com/libexpat/libexpat/releases/tag/R_2_5_0/$(EXPAT_VER)/$(EXPAT_SOURCE)
+	$(WGET) https://kumisystems.dl.sourceforge.net/project/expat/expat/2.6.4/expat-2.6.4.tar.xz?viasf=1/$(EXPAT_VER)/$(EXPAT_SOURCE)
 
 $(D)/expat: $(D)/bootstrap $(ARCHIVE)/$(EXPAT_SOURCE)
 	$(START_BUILD)
