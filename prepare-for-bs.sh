@@ -119,7 +119,8 @@ PACKAGES="\
 	${UBUNTU:+mm-common}            ${SUSE:+mm-common}           ${FEDORA:+mm-common}     ${GENTOO:+mm-common}    \
 	${UBUNTU:+autoconf-archive}                                                                                   \
 	${UBUNTU:+cpio}                                                                                               \
-	${UBUNTU:+bc}                                                                                                 \
+	${UBUNTU:+bc}
+        ${UBUNTU:+libgpgme-dev}
 ";
 
 if [ "$UBUNTU" == 1 ]; then
