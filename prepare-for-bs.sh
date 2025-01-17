@@ -110,7 +110,7 @@ PACKAGES="\
 	${UBUNTU:+liblzo2-dev}          ${SUSE:+lzo-devel}           ${FEDORA:+lzo-devel}      ${GENTOO:+lzo:2}       \
 	${UBUNTU:+ruby}                                                                        ${GENTOO:+ruby}        \
 	${UBUNTU:+libltdl-dev}                                       ${FEDORA:+libtool-ltdl-devel}                    \
-	                                                             ${FEDORA:+byacc}                                 \
+	${UBUNTU:+gtk-doc-tools}                                     ${FEDORA:+byacc}                                 \
 	${UBUNTU:+libssl-dev}           ${SUSE:+libopenssl-devel}    ${FEDORA:+openssl-devel}                         \
 	${UBUNTU:+libmount-dev}                                      ${FEDORA:+help2man}                              \
 	${UBUNTU:+mtools}                                            ${FEDORA:+rpcgen}                                \
